@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qf.dao.GoodsDao">
+<select id="findPageByWhere" resultType="Goods">
+    select * from tb_goods
+    <where>
+        <if test="condition!=null and condition !=''">
+            and ${condition}
+        </if>
+    </where>
+</select>
+    <select id="getCount" resultType="long">
+        select count(*) from tb_goods
+        <where>
+            <if test="condition!=null and condition!=''">
+                AND ${condition}
+            </if>
+        </where>
+    </select>
+    <select id="findById" resultType="Goods">
+        select * from tb_goods where id=#{gid}
+    </select>
+</mapper>
