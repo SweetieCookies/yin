@@ -23,6 +23,7 @@
     <!-- 导入外部参数文件 -->
     <context:property-placeholder location="classpath*:jdbc.properties"/>
     <!-- 连接池：druid -->
+
     <bean id="druid" class="com.alibaba.druid.pool.DruidDataSource">
         <!-- 基本属性 url、user、password -->
         <property name="url" value="${jdbc.url}"/>
@@ -62,7 +63,7 @@
         <!-- mapper文件
              如果和dao接口在同包且同名，则如下注入可以省略
          -->
-       <property name="mapperLocations" value="classpath:com/qf/dao/*.xml"/>
+<!--       <property name="mapperLocations" value="classpath:com/qf/dao/*.xml"/>-->
         <!-- 别名 -->
         <property name="typeAliasesPackage" value="com.qf.domain"/>
         <!-- 插件 -->

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/yinlong.iml" filepath="$PROJECT_DIR$/.idea/yinlong.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yinlong_dao/yinlong_dao.iml" filepath="$PROJECT_DIR$/yinlong_dao/yinlong_dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yinlong_service/yinlong_service.iml" filepath="$PROJECT_DIR$/yinlong_service/yinlong_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yinlong_web/yinlong_web.iml" filepath="$PROJECT_DIR$/yinlong_web/yinlong_web.iml" />
+    </modules>
+  </component>
+</project>

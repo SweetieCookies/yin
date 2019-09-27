@@ -40,7 +40,7 @@ public class AutoLoginFilter implements Filter {
                     String[] split = decode.split("#");
                     User user1 = userService.login(split[0], split[1]);
                     if(user1!=null){
-                        if(user1.getFlag()==1) {
+                        if(user.getFlag()==1) {
                             request.getSession().setAttribute("user", user1);
                             chain.doFilter(req, resp);
                             return;
