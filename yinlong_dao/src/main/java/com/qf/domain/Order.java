@@ -3,15 +3,6 @@ package com.qf.domain;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
-
-/**
- *  `id` varchar(100) NOT NULL,
- *   `uid` int(11) DEFAULT NULL,
- *   `money` decimal(12,8) DEFAULT NULL,
- *   `status` varchar(10) DEFAULT NULL,
- *   `time` datetime DEFAULT NULL,
- *   `aid` int(11) DEFAULT NULL,
- */
 public class Order {
     private String id;
     private Integer uid;

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/.gitignore" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/.gitignore" charset="GBK" />
     <file url="file://$PROJECT_DIR$/yinlong_dao" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yinlong_service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yinlong_web" charset="UTF-8" />

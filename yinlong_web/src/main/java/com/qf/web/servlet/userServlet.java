@@ -89,7 +89,7 @@ public class userServlet extends BaseServlet {
         }
         User user = userService.login(username, password);
        // System.out.println(user.toString());
-        System.out.println(user.toString());
+        //System.out.println(user.toString());
         if (user == null) {
             request.setAttribute("msg", "账号密码错误");
             return "/login.jsp";

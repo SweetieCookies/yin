@@ -14,7 +14,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebFilter(filterName = "AutoLoginFilter",value = "/*")
-public class AutoLoginFilter implements Filter {
+public class
+AutoLoginFilter implements Filter {
     @Autowired
     private UserService userService= (UserService) ContextLoader.getCurrentWebApplicationContext().getBean("userServiceImpl");
     public void destroy() {
@@ -39,8 +40,9 @@ public class AutoLoginFilter implements Filter {
                   //  System.out.println(decode);
                     String[] split = decode.split("#");
                     User user1 = userService.login(split[0], split[1]);
+                   // System.out.println(user1.toString());
                     if(user1!=null){
-                        if(user.getFlag()==1) {
+                        if(user1.getFlag()==1) {
                             request.getSession().setAttribute("user", user1);
                             chain.doFilter(req, resp);
                             return;
